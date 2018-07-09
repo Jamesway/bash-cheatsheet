@@ -53,14 +53,14 @@ fi
 single "=" tests equality unlike most languages where "==" tests equality and single "=" assigns, bash tests with singe "="  
 "!=" still tests for inequality
 ```
-VAR1="abc"
-VAR2="xyz"
-if [ ${VAR1} = ${VAR2} ]
+var1="abc"
+var2="xyz"
+if [ $var = $var2 ]
 then
   echo "they're equal"
 fi
 
-if [ ${VAR1} != ${VAR2} ]
+if [ $var1 != $var2 ]
 then
   echo "they're not equal"
 fi
